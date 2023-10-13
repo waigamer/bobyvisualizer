@@ -1,13 +1,13 @@
-package com.bot.don.visualizer;
+package com.bot.soportesyresistencias;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VisualizerApplication {
+public class SoportesyresistenciasApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VisualizerApplication.class, args);
+		SpringApplication.run(SoportesyresistenciasApplication.class, args);
 	}
 
 }
