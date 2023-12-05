@@ -5,16 +5,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.4</version>
+		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bot</groupId>
-	<artifactId>soportesyresistencias</artifactId>
+	<groupId>com.galdevs</groupId>
+	<artifactId>resistenciasysoportes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>soportesyresistencias</name>
-	<description>calculos de soportes y resistencias</description>
+	<name>resistenciasysoportes</name>
+	<description>Proyecto para calcular resistencias y soportes con una pequeña capa para recuperar velas</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,10 +27,21 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<dependency>
+  <groupId>com.google.code.gson</groupId>
+  <artifactId>gson</artifactId>
+  <version>2.10</version>
+</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -41,12 +52,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		    <dependency>
+		<dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>30.1-jre</version> <!-- Puedes necesitar una versión diferente dependiendo de tu entorno -->
+    </dependency>
+        <dependency>
         <groupId>org.jfree</groupId>
         <artifactId>jfreechart</artifactId>
         <version>1.5.3</version> <!-- Asegúrate de verificar la última versión disponible -->
     </dependency>
-
 	</dependencies>
 
 	<build>
